@@ -9,8 +9,8 @@ const HeroSection = () => {
   const navigate = useNavigate();
 
   const searchJobHandler = () => {
-    dispatch(setSearchedQuery(query));
-    navigate('/');
+    dispatch(setSearchedQuery(query)); // Set the query in Redux
+    navigate(`/search-results?query=${query}`); // Navigate to the search results page with the query as a URL parameter
   };
 
   return (

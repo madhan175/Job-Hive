@@ -50,12 +50,12 @@ const Jobs = () => {
                         placeholder="Search jobs..."
                         value={searchedQuery}
                         onChange={(e) => setSearchedQuery(e.target.value)}
-                        className="p-2 border rounded-md flex-1"
+                        className="p-2 border rounded-md flex-1 dark:bg-gray-800 dark:text-white dark:border-gray-700"
                     />
                     <select
                         value={selectedLocation}
                         onChange={(e) => setSelectedLocation(e.target.value)}
-                        className="p-2 border rounded-md"
+                        className="p-2 border rounded-md dark:bg-gray-800 dark:text-white dark:border-gray-700"
                     >
                         <option value="">All Locations</option>
                         <option value="New York">New York</option>
@@ -66,7 +66,7 @@ const Jobs = () => {
                     <select
                         value={selectedJobType}
                         onChange={(e) => setSelectedJobType(e.target.value)}
-                        className="p-2 border rounded-md"
+                        className="p-2 border rounded-md dark:bg-gray-800 dark:text-white dark:border-gray-700"
                     >
                         <option value="">All Job Types</option>
                         <option value="Full-Time">Full-Time</option>

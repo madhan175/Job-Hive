@@ -1,8 +1,11 @@
 const tailwindcssAnimate = require("tailwindcss-animate");
 
 module.exports = {
-  darkMode: ["class"],
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  darkMode: 'class',  // Add dark mode support using class-based toggle
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}"
+  ],
   theme: {
     extend: {
       borderRadius: {

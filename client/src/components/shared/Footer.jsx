@@ -11,12 +11,11 @@ import {
 import { HiArrowRight } from "react-icons/hi";
 
 const Footer = () => {
-
   const currentYear = new Date().getFullYear(); // Dynamic Year
   return (
-    <footer className="bg-white text-gray-800">
+    <footer className="bg-white text-gray-800 dark:bg-gray-800 dark:text-gray-200">
       {/* Line Above Footer */}
-      <hr className="border-t-2 border-gray-300" />
+      <hr className="border-t-2 border-gray-300 dark:border-gray-600" />
 
       <div className="container mx-auto px-6 py-10">
         {/* Grid Structure */}
@@ -29,16 +28,18 @@ const Footer = () => {
                 Hive
               </span>
             </h2>
-            <p className="mt-4 text-gray-600">
+            <p className="mt-4 text-gray-600 dark:text-gray-400">
               Collin Street West, Victor 8007, Australia.
             </p>
-            <p className="mt-2 text-gray-600">+1 246-345-0695</p>
-            <p className="mt-2 text-gray-600">info@jobhunt.com</p>
+            <p className="mt-2 text-gray-600 dark:text-gray-400">+1 246-345-0695</p>
+            <p className="mt-2 text-gray-600 dark:text-gray-400">info@jobhunt.com</p>
           </div>
 
           {/* About Us */}
           <div>
-            <h3 className="text-lg font-semibold text-purple-700">About Us</h3>
+            <h3 className="text-lg font-semibold text-purple-700 dark:text-purple-400">
+              About Us
+            </h3>
             <ul className="mt-4 space-y-2">
               {[
                 "Product",
@@ -59,54 +60,54 @@ const Footer = () => {
 
           {/* Social Media Icons */}
           <div>
-            <h3 className="text-lg font-semibold text-purple-700">
+            <h3 className="text-lg font-semibold text-purple-700 dark:text-purple-400">
               Follow Us
             </h3>
             <div className="mt-4 flex flex-wrap md:flex-col justify-center gap-4">
               <FaFacebookF
                 size={24}
-                className="text-gray-600 hover:text-red-500 transition-colors duration-300"
+                className="text-gray-600 hover:text-red-500 transition-colors duration-300 dark:text-gray-400 dark:hover:text-red-500"
               />
               <FaTwitter
                 size={24}
-                className="text-gray-600 hover:text-red-500 transition-colors duration-300"
+                className="text-gray-600 hover:text-red-500 transition-colors duration-300 dark:text-gray-400 dark:hover:text-red-500"
               />
               <FaInstagram
                 size={24}
-                className="text-gray-600 hover:text-red-500 transition-colors duration-300"
+                className="text-gray-600 hover:text-red-500 transition-colors duration-300 dark:text-gray-400 dark:hover:text-red-500"
               />
               <FaPinterest
                 size={24}
-                className="text-gray-600 hover:text-red-500 transition-colors duration-300"
+                className="text-gray-600 hover:text-red-500 transition-colors duration-300 dark:text-gray-400 dark:hover:text-red-500"
               />
               <FaDribbble
                 size={24}
-                className="text-gray-600 hover:text-red-500 transition-colors duration-300"
+                className="text-gray-600 hover:text-red-500 transition-colors duration-300 dark:text-gray-400 dark:hover:text-red-500"
               />
               <FaGoogle
                 size={24}
-                className="text-gray-600 hover:text-red-500 transition-colors duration-300"
+                className="text-gray-600 hover:text-red-500 transition-colors duration-300 dark:text-gray-400 dark:hover:text-red-500"
               />
               <FaLinkedinIn
                 size={24}
-                className="text-gray-600 hover:text-red-500 transition-colors duration-300"
+                className="text-gray-600 hover:text-red-500 transition-colors duration-300 dark:text-gray-400 dark:hover:text-red-500"
               />
             </div>
           </div>
 
           {/* Help Section */}
           <div>
-            <h3 className="text-lg font-semibold text-purple-700">
+            <h3 className="text-lg font-semibold text-purple-700 dark:text-purple-400">
               Still Need Help?
             </h3>
-            <p className="mt-4 text-gray-600">
+            <p className="mt-4 text-gray-600 dark:text-gray-400">
               Let us know about your issue, and a professional will reach out.
             </p>
             <div className="mt-4 flex items-center rounded-full shadow-lg hover:shadow-xl focus-within:ring-2 focus-within:ring-purple-500 transition-all duration-300">
               <input
                 type="email"
                 placeholder="Enter Valid Email Address"
-                className="flex-1 px-4 py-3 rounded-l-full outline-none text-gray-700"
+                className="flex-1 px-4 py-3 rounded-l-full outline-none text-gray-700 dark:text-gray-300"
               />
               <button className="bg-red-500 hover:bg-purple-700 transition-all duration-300 px-6 py-3 text-white rounded-r-full">
                 <HiArrowRight size={20} />
@@ -116,8 +117,8 @@ const Footer = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-gray-300 pt-6 mt-6 text-center">
-          <p className="text-gray-600 text-sm">
+        <div className="border-t border-gray-300 pt-6 mt-6 text-center dark:border-gray-600">
+          <p className="text-gray-600 text-sm dark:text-gray-400">
             &copy; {currentYear} Job Hive. All rights reserved.
           </p>
         </div>
